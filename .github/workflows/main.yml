@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      unityVersion:
+          - 2021.3.0f1c1
       matrix:
         targetPlatform:
           - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
